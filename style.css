@@ -61,7 +61,7 @@ a.nav-link:hover,
 }
 
 .bg-company {
-  background-image: url('images/googlebg.png');
+  background-image: url('images/mainbg.png');
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
