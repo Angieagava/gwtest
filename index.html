@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gowork">
+    <title>Gowork.com</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--icon-->
+    <link rel="icon" type="image/x-icon" href="images/gowork.ico">
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--basic css-->
+    <link id="pagestyle" href="style.css" rel="stylesheet" type="text/css">
+    <!--bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/511155ee61.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+
+<!--header-->    
+    <header class="container-fluid p-0 m-0">
+
+<!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo_sm.svg" alt="mainlogo">
+          </a>
+          <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center justify-content-center" id="navbarScroll">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#" title="Opinions about companies" aria-current="page">
+                  Opinions about companies
+               </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" title="Earnings">
+                  Earnings in companies
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="About Us">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="For business">For business</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!-- Hero -->
+      <div class="bg-company"></div>
+  
+
+<!--Company name-->
+
+      <div class="container-fluid company_info">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="logo_bg">
+              <img src="images/logoo.png" class="rounded company_logo" alt="company logo">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-bg h2 company_name">
+              <span class="text-uppercase">Google</span>
+              <span class="text-capitalize">Inc.</span>
+            </div>
+            <div class="company_detail">
+              <p class="company_location">USA, California</p>
+              <p class="company_webpage"><a href="https://about.google/" title="Go to company's page" target="_blank"> https://about.google/</a></p>
+              <p>
+                <button class="btn btn-outline-dark btn-sm m-1">Artificial intelligence</button>
+                <button class="btn btn-outline-dark btn-sm m-1">Advertising</button>
+                <button class="btn btn-outline-dark btn-sm m-1">Cloud computing</button>
+                <button class="btn btn-outline-dark btn-sm m-1">Computer software</button>
+                <button class="btn btn-outline-dark btn-sm m-1">Computer hardware</button>
+                <button class="btn btn-outline-dark btn-sm m-1">Internet</button>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 company_evaluation text-center">
+            <div>Company evaluation 4.7/5</div>
+            <div class="text-warning">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div>based on 3000 ratings</div>
+            <small><a href="#">Click to rate</a></small>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!--TABS-->
+    <div class="container-fluid">
+      <!-- Tabs navs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Profile</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="opinion-tab" data-bs-toggle="tab" data-bs-target="#opinion" type="button" role="tab" aria-controls="opinion" aria-selected="false">Opinion</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="salary-tab" data-bs-toggle="tab" data-bs-target="#salary" type="button" role="tab" aria-controls="salary" aria-selected="false">Salary</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business" type="button" role="tab" aria-controls="business" aria-selected="false">Business</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits" type="button" role="tab" aria-controls="benefits" aria-selected="false">Benefits</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="news-tab" data-bs-toggle="tab" data-bs-target="#news" type="button" role="tab" aria-controls="news" aria-selected="false">News</button>
+          </li>
+        </ul>
+    </div>
+<!--LEFT PANEL-->
+<!-- Tabs content -->
+    <div class="container-fluid bg_grey">
+      <div class="container h-100 pt-4">
+        <div class="row">
+          <div class="col-md-8 p-2">
+            <div class="tab-content" id="myTabContent">
+
+              <!--profile-tab-->
+              <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="card py-4 border-0 ">
+                  <div class="container">
+                    <div class="row">
+                      <h4 class="my-4 display-4">Google Inc.</h4>
+                      <hr>
+                      <div class="col-6">
+                        <p><strong>Website:</strong> <a href="https://about.google/" target="_blank" title=" Go to Google about page"> https://about.google/</a></p>
+                        <p><strong>Size:</strong> 100.000+ (2021) </p>
+                        <p><strong>Headquaters:</strong> California, USA</p>
+                        <p><strong>Founded:</strong> 1998</p>
+                        <p><strong>CEO:</strong> Sundar Pichai (since 2015)</p>
+                      </div>
+                      <div class="col-6">
+                        <p>Career: <a href="https://careers.google.com/" target="_blank" title="Go to Google career page">https://careers.google.com/</a></p>
+                        <p><strong>Industry:</strong>
+                            <button class="btn btn-outline-dark btn-sm m-1">Artificial intelligence</button>
+                            <button class="btn btn-outline-dark btn-sm m-1">Advertising</button>
+                            <button class="btn btn-outline-dark btn-sm m-1">Cloud computing</button>
+                            <button class="btn btn-outline-dark btn-sm m-1">Computer software</button>
+                            <button class="btn btn-outline-dark btn-sm m-1">Computer hardware</button>
+                            <button class="btn btn-outline-dark btn-sm m-1">Internet</button>
+                          </p>
+                      </div>
+                    </div>
+                    <div class="py-4">
+                      <h5>Company description: </h5>
+                      <p>Google is an American multinational technology company focusing on search engine technology, online advertising, cloud computing, computer software, quantum computing, e-commerce, artificial intelligence,and consumer electronics. It has been referred to as "the most powerful company in the world" and one of the world's most valuable brands due to its market dominance, data collection, and technological advantages in the area of artificial intelligence. Its parent company Alphabet is considered one of the Big Five American information technology companies, alongside Amazon, Apple, Meta, and Microsoft.</p>
+                      <h5>Mission:</h5>
+                      <p>Our mission is to organize the world's information resources so that they become universally available and useful to everyone.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!--opinions-->
+                <div class="card h-100 my-4 py-4 border-0 ">
+                  <div class="card-body">
+                    <h5 class="card-title">Best opinions:</h5>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <small>01-01-2022</small>
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <hr>
+                          <h5>Lorem ipsum dolor sit amet</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-0 m-0">Work/Life balance
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Culture & values
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Career opportunities
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Compansation & benefits
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Management
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="btn btn-outline-dark" href="#" title="Read more opinions about this company">Read more</a>
+                  </div>
+                </div>
+                <!--benefits-->
+                <div class="card p-4 mb-4 border-0 ">
+                  <div class="card-body">
+                    <h5 class="card-title">Benefits</h5>
+                      <div class="row justify-content-between text-center">
+                        <div class="col">
+                          <img src="images/benefit_retirement.svg" alt="icon">
+                          <p class="my-2">Matching 401k contributions</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_equity.svg" alt="icon">
+                          <p class="my-2">Company equity</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_vacation2.svg" alt="icon">
+                          <p class="my-2">Paid time off</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_discount.svg" alt="icon">
+                          <p class="my-2">Employee discounts</p>
+                        </div>             
+                      </div>
+                      <div class="row justify-content-between text-center">
+                        <div class="col">
+                          <img src="images/benefit_plan.svg" alt="icon">
+                          <p class="my-2">Employee growth plan</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_mind.svg" alt="icon">
+                          <p class="my-2">Personal growth time</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_trainings.svg" alt="icon">
+                          <p class="my-2">Career development training</p>
+                        </div>
+                        <div class="col">
+                          <img src="images/benefit_education.svg" alt="icon">
+                          <p class="my-2">Training courses</p>
+                        </div>
+                      </div>
+                      <a class="btn btn-outline-dark" href="#" title="Read more opinions about this company">Read more</a>
+                  </div>
+                </div>
+                <!--news-->
+                <div class="card mb-4 py-4 border-0 ">
+                  <div class="container">
+                    <h5 class="card-title">News</h5>           
+                    <div class="row p-0 m-0">
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google1.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Safer with Google</h5>
+                          <p class="card-text">When you use our services, we protect your privacy and care about your safety. Every day you can feel safer with Google</p>
+                          <a href="#" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google2.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Google for Education</h5>
+                          <p class="card-text">Explore education-specific services that help transform learning and teaching.</p>
+                          <a href="#" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google4.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Build your future with Google</h5>
+                          <p class="card-text">Whether it's business or engineering & technology, we're here to help get you to your future.</p>
+                          <a href="https://buildyourfuture.withgoogle.com/" target="_blank" title="go to google page" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="btn btn-outline-dark mx-auto" href="#" title="Read more company news">Read more</a>
+                  </div>
+                </div>
+              </div>
+
+     <!--opinion-tab-->
+              <div class="tab-pane fade" id="opinion" role="tabpanel" aria-labelledby="opinion-tab">
+                <div class="card h-100 mb-4">
+                  <div class="card-body text-center">
+                    <div>Company evaluation 4.7/5</div>
+                      <div class="text-warning">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <div>based on 3000 ratings</div>
+                      <small><a href="#">Click to rate</a></small>
+                  </div>
+                </div>
+                <div>
+                  <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fa-solid fa-arrow-up-wide-short"></i> Best first</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-arrow-up-short-wide"></i> Worst first</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-arrow-up-a-z"></i> New first</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fa-solid fa-arrow-down-z-a"></i> Old first</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="card h-100 mb-4">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <small>01-01-2022</small>
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <hr>
+                          <h5>Lorem ipsum dolor sit amet</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-0 m-0">Work/Life balance
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Culture & values
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Career opportunities
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Compansation & benefits
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Management
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card h-100 mb-4">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <small>01-01-2022</small>
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <hr>
+                          <h5>Lorem ipsum dolor sit amet</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-0 m-0">Work/Life balance
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Culture & values
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Career opportunities
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Compansation & benefits
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Management
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card h-100 mb-4">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-md-8">
+                        <small>01-01-2022</small>
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                          <hr>
+                          <h5>Lorem ipsum dolor sit amet</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="p-0 m-0">Work/Life balance
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Culture & values
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Career opportunities
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Compansation & benefits
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                        <div class="p-0 m-0">Management
+                          <div class="text-warning">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--salary-tab-->
+              <div class="tab-pane fade" id="salary" role="tabpanel" aria-labelledby="salary-tab">
+                <div class="card p-4 mb-4">
+                  <div class="card-body">
+                    <div class="container">
+                      <nav class="navbar">
+                        <div class="container p-0">
+                          <h5 class="my-4">Search for salary by country</h5>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Type country" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                      <div class="row">
+                        <div id="elastic-table">
+                          <table class="col-md-12  cf border-0">
+                            <thead class="cf">
+                              <tr class="">
+                                <th>Job Position</th>
+                                <th>Industry</th>
+                                <th>Country</th>
+                                <th class="numeric">Salary</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$250-350K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Product Manager</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Artificial Inteligence</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$190-250K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Account Manager</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Advertising</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$150-220K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$150-350K</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-4 mb-4">
+                  <div class="card-body">
+                    <div class="container">
+                      <nav class="navbar">
+                        <div class="container p-0">
+                          <h5 class="my-4">Search for salary by job position</h5>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Type job position" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                      <div class="row">
+                        <div id="elastic-table">
+                          <table class="col-md-12  cf border-0">
+                            <thead class="cf">
+                              <tr class="">
+                                <th>Job Position</th>
+                                <th>Industry</th>
+                                <th>Country</th>
+                                <th class="numeric">Salary</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$250-350K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Artificial Inteligence</button></td>
+                                <td data-title="Country">Germany</td>
+                                <td data-title="Salary" class="numeric">$190-250K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Advertising</button></td>
+                                <td data-title="Country">France</td>
+                                <td data-title="Salary" class="numeric">$150-220K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">Poland</td>
+                                <td data-title="Salary" class="numeric">$150-350K</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card p-4 mb-4">
+                  <div class="card-body">
+                    <div class="container">
+                      <nav class="navbar">
+                        <div class="container p-0">
+                          <h5 class="my-4">Search for salary by industry</h5>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Type industry" aria-label="Search">
+                            <button class="btn btn-outline-dark" type="submit">Search</button>
+                          </form>
+                        </div>
+                      </nav>
+                      <div class="row">
+                        <div id="elastic-table">
+                          <table class="col-md-12  cf border-0">
+                            <thead class="cf">
+                              <tr class="">
+                                <th>Job Position</th>
+                                <th>Industry</th>
+                                <th>Country</th>
+                                <th class="numeric">Salary</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">USA</td>
+                                <td data-title="Salary" class="numeric">$250-350K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Product Manager</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">Germany</td>
+                                <td data-title="Salary" class="numeric">$190-250K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Account Manager</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">France</td>
+                                <td data-title="Salary" class="numeric">$150-220K</td>
+                              </tr>
+                              <tr class="">
+                                <td data-title="Position">Software Engineer</td>
+                                <td data-title="Industry"><button class="btn btn-sm btn-outline-dark">Software</button></td>
+                                <td data-title="Country">Poland</td>
+                                <td data-title="Salary" class="numeric">$150-350K</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>        
+              </div>
+
+
+              <!--business-tab-->
+              <div class="tab-pane fade" id="business" role="tabpanel" aria-labelledby="business-tab">
+                <div class="card">
+                  <div class="card-body">
+                    <p>
+                      Google LLC is an American multinational technology company focusing on:
+                      <ul>
+                        <li> search engine technology,</li>
+                        <li> online advertising,</li>
+                        <li> cloud computing, computer software,</li>
+                        <li> quantum computing,</li>
+                        <li> e-commerce, </li>
+                        <li>artificial intelligence,</li>
+                        <li>consumer electronics.</li>
+                      </ul> 
+                      <p><strong>Google has been referred to as "the most powerful company in the world" and one of the world's most valuable brands due to its market dominance, data collection, and technological advantages in the area of artificial intelligence.Its parent company Alphabet is considered one of the Big Five American information technology companies, alongside Amazon, Apple, Meta, and Microsoft.</strong></p>
+                      <hr>
+
+                      <p>Google was founded on September 4, 1998, by Larry Page and Sergey Brin while they were PhD students at Stanford University in California. Together they own about 14% of its publicly listed shares and control 56% of the stockholder voting power through super-voting stock. The company went public via an initial public offering (IPO) in 2004. In 2015, Google was reorganized as a wholly owned subsidiary of Alphabet Inc. Google is Alphabet's largest subsidiary and is a holding company for Alphabet's Internet properties and interests. Sundar Pichai was appointed CEO of Google on October 24, 2015, replacing Larry Page, who became the CEO of Alphabet. On December 3, 2019, Pichai also became the CEO of Alphabet.</p>
+                      <hr>
+                      <p>The company has since rapidly grown to offer a multitude of products and services beyond Google Search, many of which hold dominant market positions.<br>
+                      These products address a wide range of use cases, including:</p>
+                      <ul>
+                          <li> email (Gmail)</li>
+                          <li> navigation (Waze & Maps)</li>
+                          <li> cloud computing (Cloud)</li>
+                          <li> web browsing (Chrome)</li>
+                          <li> video sharing (YouTube)</li>
+                          <li> productivity (Workspace)</li>
+                          <li> operating systems (Android)</li>
+                          <li> cloud storage (Drive)</li>
+                          <li> language translation (Translate)</li>
+                          <li> photo storage (Photos)</li>
+                          <li> video calling (Meet)</li>
+                          <li> smart home (Nest)</li>
+                          <li> smartphones (Pixel)</li>
+                          <li> wearable technology (Pixel Watch & Fitbit)</li>
+                          <li> music streaming (YouTube Music)</li>
+                          <li> video on demand (YouTube TV)</li>
+                          <li> artificial intelligence (Google Assistant)</li>
+                          <li> machine learning APIs (TensorFlow)</li>
+                          <li> AI chips (TPU), and more</li>
+                        </ul>
+
+                      <p>Google's other ventures outside of Internet services and consumer electronics include:</p>
+                        <ul>
+                          <li> quantum computing (Sycamore)</li>
+                          <li> self-driving cars (Waymo, formerly the Google Self-Driving Car Project)</li>
+                          <li> smart cities (Sidewalk Labs)</li>
+                          <li> and transformer models (Google Brain).</li>
+                        </ul>
+                      <hr>
+                      <p>Google and YouTube are the two most visited websites worldwide followed by Facebook and Twitter.</p>
+                      <p> Google is also the largest search engine, mapping and navigation application, email provider, office suite, video sharing platform, photo and cloud storage provider, mobile operating system, web browser, ML framework, and AI virtual assistant provider in the world as measured by market share.</p>
+                      <p>On the list of most valuable brands, Google is ranked second by Forbes and fourth by Interbrand. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--benefits-tab-->
+              <div class="tab-pane fade" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
+                <div class="card text-center mb-4">
+                  <div class="card-body">
+                    <div class="row justify-content-between">
+                      <h5 class="my-4">Education and career growth</h5>
+                      <div class="col">
+                        <img src="images/benefit_plan.svg" alt="icon">
+                        <p class="my-2">Employee growth plan</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_mind.svg" alt="icon">
+                        <p class="my-2">Personal growth time</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_trainings.svg"  alt="icon">
+                        <p class="my-2">Career development training</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_education.svg" alt="icon">
+                        <p class="my-2">Training courses</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card text-center mb-4">
+                  <div class="card-body">
+                    <div class="row justify-content-between">
+                      <h5 class="my-4">Financial gains</h5>
+                      <div class="col">
+                        <img src="images/benefit_retirement.svg"  alt="icon">
+                        <p class="my-2">Matching 401k contributions</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_equity.svg"  alt="icon">
+                        <p class="my-2">Company equity</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_vacation2.svg" alt="icon">
+                        <p class="my-2">Paid time off</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_discount.svg" alt="icon">
+                        <p class="my-2">Employee discounts</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_vacation3.svg" alt="icon">
+                        <p class="my-2">Holiday bonuses</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center mb-4">
+                  <div class="card-body">
+                    <div class="row justify-content-between">
+                      <h5 class="my-4"> Insurance, Health & Wellness</h5>
+                      <div class="col">
+                        <img src="images/benefit_tooth_i.svg" alt="icon">
+                        <p class="my-2">Dental Insurance</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_eyecare.svg" alt="icon">
+                        <p class="my-2"> Vision Insurance</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_health_in.svg" alt="icon">
+                        <p class="my-2"> Health Insurance</p>
+                      </div>
+                      <div class="col">
+                        <img src="images/benefit_life_in.svg" alt="icon">
+                        <p class="my-2">Life Insurance</p>
+                      </div>
+                      <div class="col">
+                         <img src="images/benefit_mind_insur.svg" alt="icon">
+                          <p class="my-2">Mental Health Insurance</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card text-center mb-4">
+                  <div class="card-body">
+                     <div class="row justify-content-between">
+                         <h5 class="my-4">Wellness benefits</h5>
+                         <div class="col">
+                            <img src="images/benefit_lunch2.svg" alt="icon">
+                            <p class="my-2">Complimentary lunch</p>
+                         </div>
+                         <div class="col">
+                            <img src="images/benefit_spa.svg" alt="icon">
+                            <p class="my-2">Wellness options</p>
+                         </div>
+                         <div class="col">
+                           <img src="images/benefit_chillout.svg" alt="icon">
+                          <p class="my-2">Relaxation spaces</p>
+                         </div>
+                         <div class="col">
+                           <img src="images/benefit_snacks.svg" alt="icon">
+                          <p class="my-2">In-office snacks </p>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="card text-center mb-4">
+                    <div class="card-body">
+                      <div class="row justify-content-between">
+                         <h5 class="my-4">Employee recognition gifts</h5>
+                         <div class="col">
+                           <img src="images/benefit_party.svg" alt="icon">
+                            <p class="my-2">Company parties</p>
+                             </div>
+                             <div class="col">
+                               <img src="images/benefit_elastic.svg" alt="icon">
+                                <p class="my-2">Flexible schedule</p>
+                             </div>
+                               <div class="col">
+                               <img src="images/benefit_wfh.svg" alt="icon">
+                                <p class="my-2">Work from home option</p>
+                             </div>
+                             <div class="col">
+                                <img src="images/benefit_giftcard.svg" alt="icon">
+                                <p class="my-2">Gift cards</p>
+                              </div>
+                              <div class="col">
+                                <img src="images/benefit_bonus.svg" alt="icon">
+                                <p class="my-2">Yearly bonuses</p>
+                              </div>
+                            </div>
+                          </div><!--card-body-->
+                      </div><!--card-->
+                  </div><!--tab-->
+
+              <!--news-tab-->
+              <div class="tab-pane fade" id="news" role="tabpanel" aria-labelledby="news-tab">
+                  <div class="card col w-100 border-0  mb-2">
+                    <img src="images/pexels2.jpg" class="card-img-top" alt="facebook_news">
+                    <div class="card-body">
+                      <h5 class="card-title">Discover a new dimension of collaboration with Google Workspace</h5>
+                      <p class="card-text">Do more with everything at your fingertips.</p>
+                      <a href="#" class="btn btn-outline-dark">More information</a>
+                    </div>
+                  </div>
+                  <div class="row p-0 m-0">
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google1.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Safer with Google</h5>
+                          <p class="card-text">When you use our services, we protect your privacy and care about your safety. Every day you can feel safer with Google</p>
+                          <a href="#" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google2.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Google for Education</h5>
+                          <p class="card-text">Explore education-specific services that help transform learning and teaching.</p>
+                          <a href="#" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-4 border-0  mb-2">
+                        <img src="images/google4.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Build your future with Google</h5>
+                          <p class="card-text">Whether it's business or engineering & technology, we're here to help get you to your future.</p>
+                          <a href="https://buildyourfuture.withgoogle.com/" target="_blank" title="go to google page" class="btn btn-link">More information</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card col border-0  mb-2">
+                      <img src="images/google3.jpg" class="card-img-top" alt="facebook_news">
+                      <div class="card-body">
+                        <h5 class="card-title">Where we work</h5>
+                        <p class="card-text">Find out where do we have offices.</p>
+                        <a href="#" class="btn btn-outline-dark">Read more</a>
+                      </div>
+                    </div>
+                    <div class="row p-0 m-0">
+                      <div class="card col-md-3 border-0  py-4">
+                        <img src="images/google5.jpg" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Commitments to creating a more inclusive world</h5>
+                          <p class="card-text">We offer our best resources to help solve humanity's greatest problems. </p>
+                          <a href="#" class="btn btn-link">More informations</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-3 border-0  py-4">
+                        <img src="images/google6.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Take a good look at how you use your devices. </h5>
+                          <p class="card-text">Learn to use them sparingly, and develop healthy habits.</p>
+                          <a href="https://wellbeing.google/" title="_blank" class="btn btn-link">More informations</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-3 border-0  py-4">
+                        <img src="images/google7.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Commitment to building a culturally diverse workforce</h5>
+                          <p class="card-text">We want to build company that reflects our users.</p>
+                          <a href="#" class="btn btn-link">More informations</a>
+                        </div>
+                      </div>
+                      <div class="card col-md-3 border-0  py-4">
+                        <img src="images/google8.png" class="card-img-top" alt="facebook_news">
+                        <div class="card-body">
+                          <h5 class="card-title">Giving more people acces to the skills</h5>
+                          <p class="card-text">All you need to succed is the digital world</p>
+                          <a href="#" class="btn btn-link">More informations</a>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+<!--RIGHT PANEL-->
+          <div class="col-md-4 p-2">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger w-100 mb-4" data-bs-toggle="modal" data-bs-target="#opinion_modal">
+              <i class="fa-solid fa-comments"></i> Add a review
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="opinion_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <textarea class="form-control" rows="3" placeholder="Share your experience"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control"  placeholder="your nick">
+                  </div>
+                  <p>My opinion is
+                  <span class="btn btn-sm btn-outline-dark text-dark">Negative</span>
+                  <span class="btn btn-sm btn-outline-dark text-dark">Neutral</span>
+                  <span class="btn btn-sm btn-outline-dark text-dark">Positive</span>
+                  </p>
+                  <label class="form-check-label" >
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="">
+                      <label class="form-check-label" >
+                        I accept the terms and conditions of the site <a href="#">Read more</a>
+                      </label>
+                    </div>
+                  </label>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">Add</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-dark bg-white w-100 mb-4" data-bs-toggle="modal" data-bs-target="#comment_modal">
+              <i class="fa-regular fa-comment-dots"></i> Comment the interview
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="comment_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!--header-->
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Job interview</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <!--modal-body-->
+                  <div class="modal-body">
+                    <div class="mb-3">
+                      <p><strong>Job interview location</strong></p>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="location">
+                    </div>
+                    <div class="mb-3">
+                      <p><strong>Job interview location</strong><button class="btn btn-link ">skip</button></p>
+                      <p>
+                      <span class="btn btn-sm btn-outline-dark text-dark">online</span>
+                      <span class="btn btn-sm btn-outline-dark text-dark">at company headquarters</span>
+                      </p>
+                    </div>
+                    <div class="mb-3">
+                      <p><strong>Duration</strong><button class="btn btn-link float-left">skip</button></p>
+                      <p>
+                      <span class="btn btn-sm btn-outline-dark text-dark">less than 30 minutes</span>
+                      <span class="btn btn-sm btn-outline-dark text-dark">30 minutes to an hour</span>
+                      <span class="btn btn-sm btn-outline-dark text-dark">over the hour</span>
+                      </p>
+                    </div>
+                    <div class="mb-3">
+                      <p><strong>Interview description (optional)</strong></p>
+                        <textarea class="form-control" rows="3" placeholder="Share your experience"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="tu nick">
+                    </div>
+                    <label class="form-check-label" >
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label" >
+                          I accept the terms and conditions of the site <a href="#">Read more</a>
+                        </label>
+                      </div>
+                    </label>
+                  </div><!--modal-footer-->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        <!--modal-end-->
+            <div class="card mb-4">
+              <div class="card-body">
+                <p class="text-center">Information about the company</p>
+                <div class="p-2"><i class="fa-solid fa-house"></i> USA</div>
+                <div class="p-2"><i class="fa-solid fa-globe"></i>
+                <a href= "https://about.google/" title="Google page" target="_blank"> https://about.google/</a></div>
+                <div class="p-2"><i class="fa-brands fa-square-facebook"></i> 
+                  <a href="https://www.facebook.com/lifeatgoogle" title="facebook Google" target="_blank">https://www.facebook.com/lifeatgoogle </a> </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <p>Opinions on similar companies</p>
+                <p><a href="#">Adobe</a></p>
+                <p><a href="#">Amazon</a></p>
+                <p><a href="#">Meta</a></p>
+                <p><a href="#">Oracle</a></p>
+                <p><a href="#">Yahoo</a></p>             
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="card-body text-center">
+                <p><a href="#">Report opinions</a></p>
+                <p><a href="#">Comply with the conditions of use</a></p>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Main page</a></li>
+              <li class="breadcrumb-item"><a href="#">Opinions about companies</a></li>
+              <li class="breadcrumb-item"><a href="#">USA</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Google</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--FOOTER-->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4">
+          <p>@ 2022 Gowork.com</p>
+          <p>Search for the opinions</p>
+          <br>
+          <p>This site is protected by</p>
+        </div>
+        <div class="col-md-4">
+          <p>Conditions of use</p>
+          <p>Privacy Policy</p>
+          <p>About Us</p>
+          <p>For businesses</p>
+          <p>Map of the page</p>
+          <p>Popular companies</p>
+        </div>
+        <div class="col-md-4">
+          <p>Contact</p>
+          <p>Blog</p>
+          <p>Gowork.pl</p>
+        </div>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn btn-danger w-100 my-2"><i class="fa-solid fa-plus"></i> Add an opinion</button>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-info w-100 my-2"><i class="fa-solid fa-plus"></i> Follow the thread</button>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-danger w-100 my-2"><i class="fa-solid fa-plus"></i> Qualify</button>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
